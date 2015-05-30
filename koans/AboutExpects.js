@@ -2,7 +2,7 @@ describe("About Expects", function() {
 
   // We shall contemplate truth by testing reality, via spec expectations.
   it("should expect true", function() {
-    expect(false).toBeTruthy(); //This should be true
+    expect(true).toBeTruthy(); //This should be true
   });
 
   // To understand reality, we must compare our expectations against reality.
@@ -15,7 +15,7 @@ describe("About Expects", function() {
 
   // Some ways of asserting equality are better than others.
   it("should assert equality a better way", function () {
-    var expectedValue = 6 * 6;
+    var expectedValue = 36;
     var actualValue = 6 * 6;
 
   // toEqual() compares using common sense equality.
