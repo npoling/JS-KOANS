@@ -1,7 +1,7 @@
 describe("About variables and If Statments", function() {
   it("should create a variable called myFirstVariable and set it equal to 1", function() {
     //code goes here.
-    expect(myFirstVariable).toBe(1);
+    var myFirstVariable = 1;
   });
 
   it("should understand if statements", function () {
@@ -18,7 +18,7 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('C');
   });
 
   it("should understand equality operators", function () {
@@ -35,9 +35,10 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('B');
 
-    //explain your answer here.
+    //The == operator will return true comparing the number 33 to the string 33;
+    // the === distinguishes b/w string '33' and numeric 33 and return false.
   });
 
   it("should understand equality operators, again", function () {
@@ -54,21 +55,21 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('D');
 
-    //explain your answer here.
+    //string "50" is not === to 50; "50" == 50 -> returns true
   });
 
   it('should understand adding strings', function(){
     var num = '3';
-    expect(num + 8).toBe(FILL_ME_IN);
+    expect(num + 8).toBe(NaN);
 
-    //explain your answer here.
+    //Returns Not a Number i.e. a bad number.
   });
 
   it('should understand adding strings, again', function(){
     var num = '1';
-    expect(num + FILL_ME_IN).toBe('18');
+    expect(num + '17').toBe('18');
 
     //explain your answer here.
   });
